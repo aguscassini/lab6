@@ -66,7 +66,7 @@ const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbers) {
   let result = 0;
-  if (!numbers.lenght) return 0;
+  if (!numbers.length) return 0;
 
   for (let i = 0; i < numbers.length; i++) {
     result += numbers[i];
@@ -78,10 +78,8 @@ function averageNumbers(numbers) {
 function averageNumbers(numbers) {
   if (!numbers.length) return null;
 
-  const sum = sumNumbers(numbers);
-  const average = sum / numbers.length;
+  return sumNumbers(numbers) / numbers.length;
 
-  return average;
 }
 
 console.log(averageNumbers(numbersAvg));
